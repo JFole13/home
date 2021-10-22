@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#9f00a7">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (min-device-width: 1000px)" href="style.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 999px)" href="mobile.css">
+    <title>Contact</title>
+</head>
+<body>
+    <div id="main-container">
+        <div id="header">
+            <div id="heading-container">
+                <div id="name">
+                    <h1>Jesse Foley</h1>
+                    <p>Developer passionate about creating user friendly front-end experiences. Check out my work!</p>
+                </div>
+                <div id="actions">
+                    <ul>
+                        <li><a href="index.html"><ion-icon name="home"></ion-icon><span>Home</span></a></li>
+                        <li><a href="https://www.linkedin.com/in/jesse-foley-26b8a218a/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon><span>LinkedIn</span></a></li>
+                        <li><a href="https://github.com/JFole13" target="_blank"><ion-icon name="logo-github"></ion-icon><span>GitHub</span></a></li>
+                        <li><a href="JesseFoleyResume.pdf" target="_blank"><ion-icon name="reader"></ion-icon><span>Resume</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="form-container">
+            <div id="form-title-container">
+                <h2 id="formTitle">Let's Chat</h2>
+            </div>
+            <div id="form">
+                <form id="myform" onsubmit="emailjs.sendForm('gmail', 'contact_form', this); return false;" method="post">
+                    <label class="hidden">reply_to</label><br>
+                    <input class="hidden" type="text" name="reply_to" id="reply_to" value="jessefoley13@gmail.com"><br>
+                    <label>Name</label><br>
+                    <input class="input" type="text" name="to_name" id="user"><br>
+                    <label>Email</label><br>
+                    <input class="input" type="text" name="from_name" id="email"><br>
+                    <label>Message</label><br>
+                    <input class="input" type="text" name="message_html" id="message_html"><br>
+                    <br>
+                    <button onclick="resetForm()">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <img src="images/favicons/favicon-32x32.png">
+        <p><a href="index.html">Home</a></p>
+    </footer>
+
+    <script>
+        function resetForm() {
+            document.getElementById('user').style.border = 'none'
+            document.getElementById('email').style.border = 'none'
+            document.getElementById('message_html').style.border = 'none'
+            let isFilledOut = true;
+
+
+            if(document.getElementById('user').value.length == 0){
+                document.getElementById('user').style.border = '1px solid #FF4C4C'
+                isFilledOut = false
+            }
+
+            if(document.getElementById('email').value.length == 0 || !document.getElementById('email').value.includes('@')){
+                document.getElementById('email').style.border = '1px solid #FF4C4C'
+                isFilledOut = false
+            }
+
+            if(document.getElementById('message_html').value.length == 0){
+                document.getElementById('message_html').style.border = '1px solid #FF4C4C'
+                isFilledOut = false
+            }
+
+            
+            if(isFilledOut){
+                setTimeout(function(){
+                    document.getElementById('myform').reset()
+                    document.getElementById('formTitle').style.animationIterationCount = 1
+                    document.getElementById('formTitle').style.webkitAnimationIterationCount = 1
+                }, 1000)
+                setTimeout(function(){document.getElementById('formTitle').innerHTML = 'Thank you!'}, 1500)
+            }
+        }
+    </script>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_tC5y35l7Vgd121W3CtYx7");
+       })();
+    </script>
+
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+</body>
+</html>

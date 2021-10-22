@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#9f00a7">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (min-device-width: 1000px)" href="style.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 999px)" href="mobile.css">
+    <title>Jesse Foley</title>
+</head>
+<body>
+    <div id="main-container">
+        <div id="header">
+            <div id="heading-container">
+                <div id="name">
+                    <h1>Jesse Foley</h1>
+                    <p>Developer passionate about creating user friendly experiences. Check out my work!</p>
+                </div>
+                <div id="actions">
+                    <ul>
+                        <li><a href="https://github.com/JFole13" target="_blank"><ion-icon name="logo-github"></ion-icon><span>GitHub</span></a></li>
+                        <li><a href="https://www.linkedin.com/in/jesse-foley-26b8a218a/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon><span>LinkedIn</span></a></li>
+                        <li><a href="contact.html"><ion-icon name="person"></ion-icon><span>Contact</span></a></li>
+                        <li><a href="JesseFoleyResume.pdf" target="_blank"><ion-icon name="reader"></ion-icon><span>Resume</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="skills-container">
+            <div id="skills">
+                <ul>
+                    <li><img src="images/HTMLicon.svg" alt="HTML Logo"></li>
+                    <li><img src="images/CSSicon.svg" alt="CSS Logo"></li>
+                    <li><img src="images/JSicon.svg" alt="JS Logo"></li>
+                    <li><img src="images/Giticon.svg" alt="Git Logo"></li>
+                    <li><img src="images/GitHubicon.svg" alt="GitHub Logo"></li>
+                    <li><img src="images/Javaicon.svg" alt="Java Logo"></li>
+                </ul>
+            </div>
+        </div>
+        <div id="projects-container">
+            <div id="single-project-container">
+                <div id="project1">
+                    <div class="project-preview-container">
+                        <img src="images/blackjackPreview.gif" alt="Blackjack Preview ">
+                    </div>
+                    <div class="project-title-container">
+                        <h2>Blackjack</h2>
+                    </div>
+                    <div class="project-tech-container">
+                        <h3>Technologies Used</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="project-description">
+                        <p>This is a simple blackjack game that includes all the main features
+                            except for splitting. Player faces the dealer who will hit until a hard 17 
+                            (card total is 17 with ace values as 1) or greater value is reached. Player 
+                            actions include hit, stand, double down and insurance betting.
+                        </p>
+                        <br>
+                        <p>
+                            All DOM maniuplation is handled through vanilla JavaScript. Cards are loaded in randomly with 
+                            an animation. There is only one deck of cards, each card being its own object in an array.
+                            After each hand, used cards get popped from card array. Once card array is empty, all cards
+                            get pushed back into the orginal array.
+                        </p>
+                    </div>
+                    <div class="project-buttons-container">
+                        <a href="blackjack/index.html"><button class="hvr-radial-out"><ion-icon name="tv-outline"></ion-icon>Live Demo</button></a>
+                        <a href="https://github.com/JFole13/blackjack"><button class="hvr-radial-out"><ion-icon name="code-slash-outline"></ion-icon>View Code</button></a>
+                    </div>
+                </div>
+                <div id="project2">
+                    <div class="project-preview-container">
+                        <img src="images/restaurantFinderPreview.gif" alt="restaurantFinder Preview">
+                    </div>
+                    <div class="project-title-container">
+                        <h2>restaurantFinder</h2>
+                    </div>
+                    <div class="project-tech-container">
+                        <h3>Technologies Used</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>Fetch API</li>
+                        </ul>
+                    </div>
+                    <div class="project-description">
+                        <p>restaurantFinder is a small web app that will give you nearby restaurant locations based on
+                            the given city. Restaurant details include address, buisness hours, average price for two
+                            and an aggregate rating.
+                        </p>
+                        <br>
+                        <p>
+                            All information was provided from the Zomato API. The API uses an api-key type authorization. Each call returns thousands of
+                            restaurant responses, so I only showed 20 of them because of the limited amount of calls
+                            I got with my account. Each restaurant returned will display in card form and can be clicked
+                            to show modal with the specfic information.
+                        </p>
+                    </div>
+                    <div class="project-buttons-container">
+                        <a href="restaurantFinder/index.html"><button class="hvr-radial-out"><ion-icon name="tv-outline"></ion-icon>Live Demo</button></a>
+                        <a href="https://github.com/JFole13/restaurantFinder"><button class="hvr-radial-out"><ion-icon name="code-slash-outline"></ion-icon>View Code</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <img src="images/favicons/favicon-32x32.png">
+        <p><a href="contact.html">Contact Me</a></p>
+    </footer>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+</body>
+</html>
+
+<!-- favicon resume and file extensions -->
