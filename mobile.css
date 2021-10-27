@@ -125,14 +125,14 @@ body{
     grid-template-rows:repeat(2, 1fr);
 }
 
-#project1, #project2{
+#project1, #project2, #project3{
     display: grid;
     border-bottom: 1px solid rgba(0, 0, 0, .5);
     margin: 0 0 1rem 0;
     justify-items: center;
 }
 
-#project1 > div, #project2 > div{
+#project1 > div, #project2 > div, #project3 > div{
     margin: .5rem 0;
 }
 

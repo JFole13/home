@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (max-device-width: 500px)" href="500Style.css">
+    <link rel="stylesheet" media="screen and (min-device-width: 501px)" href="501Style.css">
+    <script src="https://kit.fontawesome.com/0c7c9d0316.js" crossorigin="anonymous"></script>
+    <title>Tilt</title>
+</head>
+<body>
+    <div class="topnav">
+        <a href="#home" class="active" id="logo">Tilt</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <a href="#news">NFL</a>
+          <a href="#contact">NCAAF</a>
+          <a href="#about">MLB</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    <div id="bottom-container">
+      <div class="game-container">
+          <div class="team-name-container">
+            <img alt="logo" src="images/panthers.svg">
+            <p>CAR Panthers</p>
+          </div>
+          <div class="away-team-spread-container">
+            <p>-8</p>
+            <p class="odds">+110</p>
+          </div>
+          <div class="over-total-container">
+            <p>o56</p>
+            <p class="odds">+110</p>
+          </div>
+          <div class="away-team-moneyline-container">
+            <p class="odds">+110</p>
+          </div>
+          <div class="team-name-container">
+            <img alt="logo" src="images/texans.svg">
+            <p>HOU Texans</p>
+          </div>
+          <div class="home-team-spread-container">
+            <p>-8</p>
+            <p class="odds">+110</p>
+          </div>
+          <div class="under-total-container">
+            <p>u56</p>
+            <p class="odds">+110</p>
+          </div>
+          <div class="home-team-moneyline-container">
+            <p class="odds">+150</p>
+          </div>
+      </div>
+      <div class="game-container">
+        <div class="team-name-container">
+          <img alt="logo" src="images/chargers.svg">
+          <p>LA Chargers</p>
+        </div>
+        <div class="away-team-spread-container">
+          <p>+10</p>
+          <p class="odds">+110</p>
+        </div>
+        <div class="over-total-container">
+          <p>o53</p>
+          <p class="odds">+110</p>
+        </div>
+        <div class="away-team-moneyline-container">
+          <p class="odds">+200</p>
+        </div>
+        <div class="team-name-container">
+          <img alt="logo" src="images/chiefs.svg">
+          <p>KC Chiefs</p>
+        </div>
+        <div class="home-team-spread-container">
+          <p>-10</p>
+          <p class="odds">+110</p>
+        </div>
+        <div class="under-total-container">
+          <p>u53</p>
+          <p class="odds">+120</p>
+        </div>
+        <div class="home-team-moneyline-container">
+          <p class="odds">-300</p>
+        </div>
+      </div>
+      <div class="game-container">
+        <div class="team-name-container">
+          <img alt="logo" src="images/cardinals.svg">
+          <p>ARI Cardinals</p>
+        </div>
+        <div class="away-team-spread-container">
+          <p>+10</p>
+          <p class="odds">+110</p>
+        </div>
+        <div class="over-total-container">
+          <p>o53</p>
+          <p class="odds">+110</p>
+        </div>
+        <div class="away-team-moneyline-container">
+          <p class="odds">+200</p>
+        </div>
+        <div class="team-name-container">
+          <img alt="logo" src="images/jaguars.svg">
+          <p>JAX Jaguars</p>
+        </div>
+        <div class="home-team-spread-container">
+          <p>-10</p>
+          <p class="odds">+110</p>
+        </div>
+        <div class="under-total-container">
+          <p>u53</p>
+          <p class="odds">+120</p>
+        </div>
+        <div class="home-team-moneyline-container">
+          <p class="odds">-300</p>
+        </div>
+      </div>
+      <div class="game-container">
+        <div class="team-name-container">
+          <img alt="logo" src="images/bears.svg">
+          <p>CHI Bears</p>
+        </div>
+        <div class="away-team-spread-container">
+          <p>+10</p>
+          <p class="odds">+110</p>
+        </div>
+        <div class="over-total-container">
+          <p>o53</p>
+          <p class="odds">+110</p>
+        </div>
+        <div class="away-team-moneyline-container">
+          <p class="odds">+200</p>
+        </div>
+        <div class="team-name-container">
+          <img alt="logo" src="images/browns.svg">
+          <p>CLE Browns</p>
+        </div>
+        <div class="home-team-spread-container">
+          <p>-10</p>
+          <p class="odds">+110</p>
+        </div>
+        <div class="under-total-container">
+          <p>u53</p>
+          <p class="odds">+120</p>
+        </div>
+        <div class="home-team-moneyline-container">
+          <p class="odds">-300</p>
+        </div>
+      </div>
+      <div class="game-container">
+        <div class="team-name-container">
+          <img alt="logo" src="images/wft.svg">
+          <p>WFT</p>
+        </div>
+        <div class="away-team-spread-container">
+          <p>+10</p>
+          <p class="odds">+110</p>
+        </div>
+        <div class="over-total-container">
+          <p>o53</p>
+          <p class="odds">+110</p>
+        </div>
+        <div class="away-team-moneyline-container">
+          <p class="odds">+200</p>
+        </div>
+        <div class="team-name-container">
+          <img alt="logo" src="images/bills.svg">
+          <p>BUF Bills</p>
+        </div>
+        <div class="home-team-spread-container">
+          <p>-10</p>
+          <p class="odds">+110</p>
+        </div>
+        <div class="under-total-container">
+          <p>u53</p>
+          <p class="odds">+120</p>
+        </div>
+        <div class="home-team-moneyline-container">
+          <p class="odds">-300</p>
+        </div>
+      </div>
+      <div class="game-container">
+        <div class="team-name-container">
+          <img alt="logo" src="images/colts.svg">
+          <p>IND Colts</p>
+        </div>
+        <div class="away-team-spread-container">
+          <p>+10</p>
+          <p class="odds">+110</p>
+        </div>
+        <div class="over-total-container">
+          <p>o53</p>
+          <p class="odds">+110</p>
+        </div>
+        <div class="away-team-moneyline-container">
+          <p class="odds">+200</p>
+        </div>
+        <div class="team-name-container">
+          <img alt="logo" src="images/titans.svg">
+          <p>TEN Titans</p>
+        </div>
+        <div class="home-team-spread-container">
+          <p>-10</p>
+          <p class="odds">+110</p>
+        </div>
+        <div class="under-total-container">
+          <p>u53</p>
+          <p class="odds">+120</p>
+        </div>
+        <div class="home-team-moneyline-container">
+          <p class="odds">-300</p>
+        </div>
+      </div>
+      <div class="game-container">
+        <div class="team-name-container">
+          <img alt="logo" src="images/saints.svg">
+          <p>NO Saints</p>
+        </div>
+        <div class="away-team-spread-container">
+          <p>+10</p>
+          <p class="odds">+110</p>
+        </div>
+        <div class="over-total-container">
+          <p>o53</p>
+          <p class="odds">+110</p>
+        </div>
+        <div class="away-team-moneyline-container">
+          <p class="odds">+200</p>
+        </div>
+        <div class="team-name-container">
+          <img alt="logo" src="images/patriots.svg">
+          <p>NE Patriots</p>
+        </div>
+        <div class="home-team-spread-container">
+          <p>-10</p>
+          <p class="odds">+110</p>
+        </div>
+        <div class="under-total-container">
+          <p>u53</p>
+          <p class="odds">+120</p>
+        </div>
+        <div class="home-team-moneyline-container">
+          <p class="odds">-300</p>
+        </div>
+      </div>
+    </div>
+  <script src='script.js'></script>
+</body>
+</html>
