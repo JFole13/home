@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (max-device-width: 500px)" href="500Style.css">
+    <link rel="stylesheet" media="screen and (min-device-width: 501px)" href="501Style.css">
+    <script src="https://kit.fontawesome.com/0c7c9d0316.js" crossorigin="anonymous"></script>
+    <title>Tilt</title>
+</head>
+<body>
+    <!-- Major refactoring needed. Rebuild in react planned -->
+    <div class="topnav">
+        <a href="#home" class="active" id="logo" onclick="fetchSports('nfl')">Tilt</a>
+        <div id="myLinks">
+          <a href="#" onclick="fetchSports('nfl'); myFunction()">NFL</a>
+          <a href="#" onclick="fetchSports('ncaaf'); myFunction()">NCAAF</a>
+          <a href="#" onclick="fetchSports('nhl'); myFunction()">NHL</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div id="bottom-container">
+      </div>
+    <script src='script.js'></script>
+</body>
+</html>
